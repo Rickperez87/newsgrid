@@ -1,0 +1,35 @@
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+.h-l {
+  font-size: 30px;
+  font-weight: bolder;
+}
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #333;
+}
+.primary-color {
+  color: var(--primary-color);
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+.bg-light {
+  background: var(--secondary-color);
+}
+.btn {
+  padding: 10px 20px;
+  text-align: center;
+  margin: 0px 3px;
+}
+.btn-primary {
+  color: #fff;
+  background: var(--primary-color);
+}
+.btn-light {
+  color: var(--secondary-color);
+}
