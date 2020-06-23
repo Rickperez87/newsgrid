@@ -33,3 +33,15 @@
 .btn-light {
   color: var(--secondary-color);
 }
+.category {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+.category-sports {
+  background: orange;
+}

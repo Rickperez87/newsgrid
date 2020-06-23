@@ -38,18 +38,45 @@ nav .container {
 }
 /* showcase */
 .showcase {
-  background: url("./image_resources/featured.jpg") no-repeat center
-    center/cover;
+  background: #333;
+  position: relative;
   height: 400px;
 }
-.showcase .container {
+.showcase:before {
+  content: "";
+  background: url("./image_resources/featured.jpg") no-repeat center
+    center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+.showcase > .container {
+  height: 100%;
   display: grid;
-  grid-template-columns: 2fr 4fr;
-  justify-content: start;
-  align-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  height: 50vh;
 }
 .showcase-content {
   color: #fff;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.category-sports > h1 {
+  padding: 20px 0;
+  margin-bottom: 100px 0;
+}
+.category-sports p {
 }
 .showcase-content > .btn {
   display: inline-block;
