@@ -2,7 +2,7 @@
   max-width: 1100px;
   margin: auto;
   padding: 0 2rem;
-  overflow: hidden;
+  overflow: auto;
 }
 .h-l {
   font-size: 30px;
@@ -21,10 +21,43 @@
 .bg-light {
   background: var(--secondary-color);
 }
+.bg-dark {
+  background: #333;
+  color: #ffffff;
+}
+.bg-primary {
+  background: var(--primary-color);
+  color: #ffffff;
+}
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
 .btn {
   padding: 10px 20px;
   text-align: center;
   margin: 0px 3px;
+}
+.btn:hover {
+  opacity: 0.9;
 }
 .btn-primary {
   color: #fff;
@@ -37,6 +70,7 @@
   display: inline-block;
   color: #ffffff;
   font-size: 0.55rem;
+  font-weight: bold;
   text-transform: uppercase;
   padding: 0.4rem 0.6rem;
   border-radius: 15px;
@@ -44,4 +78,10 @@
 }
 .category-sports {
   background: orange;
+}
+.category-entertainment {
+  background: purple;
+}
+.category-technology {
+  background: cornflowerblue;
 }
